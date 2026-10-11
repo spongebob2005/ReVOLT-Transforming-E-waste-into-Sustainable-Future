@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keys must match CATEGORIES in backend/src/catalog.js -->
+    <string-array name="category_keys" translatable="false">
+        <item>phone</item>
+        <item>laptop</item>
+        <item>tablet</item>
+        <item>desktop</item>
+        <item>tv</item>
+        <item>battery</item>
+        <item>appliance</item>
+        <item>accessory</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="category_labels">
+        <item>Mobile phone</item>
+        <item>Laptop</item>
+        <item>Tablet</item>
+        <item>Desktop / monitor</item>
+        <item>Television</item>
+        <item>Battery</item>
+        <item>Small appliance</item>
+        <item>Accessories / cables</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="eco_facts">
+        <item>The world generated a record 62 million tonnes of e-waste in 2022, and only about 22% of it was formally collected and recycled.</item>
+        <item>A tonne of discarded mobile phones contains more gold than a tonne of gold ore.</item>
+        <item>E-waste can contain lead, mercury and cadmium, which leach into soil and groundwater when dumped.</item>
+        <item>India is one of the three largest generators of e-waste in the world, after China and the United States.</item>
+        <item>Reusing a laptop for a few more years saves far more energy than recycling it, because most of its footprint comes from manufacturing.</item>
+    </string-array>
+</resources>

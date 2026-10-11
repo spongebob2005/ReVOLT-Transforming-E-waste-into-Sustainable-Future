@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReVOLT Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <section id="login-view" class="login" hidden>
+    <form id="login-form" class="login-card">
+      <div class="brand"><span class="brand-mark">R</span> ReVOLT <small>Admin</small></div>
+      <p class="muted">Sign in to review and schedule e-waste pickups.</p>
+      <label>Email <input name="email" type="email" required autocomplete="username"></label>
+      <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
+      <p id="login-error" class="error" role="alert"></p>
+      <button type="submit" class="btn primary">Sign in</button>
+    </form>
+  </section>
+
+  <section id="app-view" hidden>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">R</span> ReVOLT <small>Admin</small></div>
+      <div class="topbar-actions">
+        <button id="refresh" class="btn ghost" type="button">Refresh</button>
+        <button id="logout" class="btn ghost" type="button">Sign out</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="stats" id="stats"></div>
+
+      <div class="toolbar">
+        <h2>Pickup requests</h2>
+        <nav class="tabs" id="tabs" aria-label="Filter by status"></nav>
+      </div>
+
+      <div id="requests" class="requests"></div>
+    </main>
+  </section>
+
+  <dialog id="status-dialog">
+    <form method="dialog" id="status-form">
+      <h3 id="status-title">Update request</h3>
+      <label>New status
+        <select name="status" id="status-select"></select>
+      </label>
+      <label>Note for the user <span class="muted">(optional)</span>
+        <textarea name="note" rows="3" maxlength="300" placeholder="e.g. Pickup on Saturday between 10am and 1pm"></textarea>
+      </label>
+      <p id="status-error" class="error" role="alert"></p>
+      <div class="dialog-actions">
+        <button value="cancel" class="btn ghost" formnovalidate>Cancel</button>
+        <button value="save" class="btn primary" id="status-save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="admin.js"></script>
+</body>
+</html>

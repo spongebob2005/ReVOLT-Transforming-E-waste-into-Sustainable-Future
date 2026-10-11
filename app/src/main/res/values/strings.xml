@@ -1,61 +1,147 @@
 <resources>
     <string name="app_name">ReVOLT</string>
-    <string name="registration_text">REGISTRATION</string>
-    <string name="open">Open Navigation Drawer</string>
-    <string name="close">Close Navigation Drawer</string>
-    <string name="select">Select Organization</string>
-    <string name="About_green_peace">
-        Greenpeace India is the Indian branch of the global environmental group Greenpeace, a non-profit NGO, with a presence in 55 countries across Europe, the America, Asia.
-        Greenpeace India has legally registered society in four locations with Bengaluru as its headquarters and other branches at Delhi, Chennai, Patna.
-        Greenpeace India states that it receives 60% of its funding from donors in India, 38% from Netherlands-based Greenpeace International and less than 1% from the US-based Climate Works Foundation, as of from June 2014 the organisation does not receive any foreign funds.
-        According to the organization, they do not accept money from governments, intergovernmental organizations, political parties or corporations in order to avoid their influence.
-        Their core fundraising model is called "Direct Dialogue Recruitment" where the fundraising team goes out on the street directly approaching the common people to discuss the current environmental condition and how Greenpeace is working towards bringing in a positive change.
-        These discussions eventually leads to enrolling the interested person as a donor and a volunteer.
+    <string name="tagline">Recycle · Recharge · Renew</string>
+    <string name="splash_slogan">Turning e-waste into a sustainable future</string>
 
-        HISTORY OF GREEN PEACE INDIA:-
-        The global organization known as Greenpeace today, came into existence in the year 1970 while Greenpeace India has been actively working on following:
+    <!-- Server -->
+    <string name="default_server_url">http://10.0.2.2:3000/</string>
+    <string name="server_settings">Server address</string>
+    <string name="server_settings_hint">Base URL</string>
+    <string name="server_settings_help">Use http://10.0.2.2:3000/ on the Android emulator, or your computer\'s Wi-Fi address (printed when the backend starts) on a real phone.</string>
+    <string name="server_test">Test</string>
+    <string name="server_testing">Checking…</string>
+    <string name="server_ok">Connected to the ReVOLT server</string>
+    <string name="server_invalid">Enter a full address such as http://192.168.1.5:3000/</string>
+    <string name="error_network">Can\'t reach the ReVOLT server. Check that the backend is running and the server address is right.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_session">Your session has expired, please log in again</string>
 
-        2001 – Greenpeace, along with victim workers of Mercury Thermometer factory in Kodaikanal, forced the Hindustan Unilever to shut down the factory.
-        2001 – Greenpeace exposed the contamination of Pringles Potato Chips and Isomil Baby food with genetically engineered ingredients and questioned India\'s GMO free status.
-        2002 – Greenpeace ran a month-long campaign to create awareness on the potential threats of what could have become the first GE food crop in the country, resulting in the rejection of genetically modified mustard.
-        2003 – Greenpeace forces Hindustan Unilever to collect mercury waste from its shut down factory in Kodaikanal and send it to the US for recycling.
-        2004 – Bayer pulled out Genetic Engineering Research in India, clarifying its position in a letter to Greenpeace.
-        2005 – Greenpeace announced in a press conference in New Delhi, that farmers in the Narsampet mandal of Warangal district of Andhra Pradesh were cheated by over Rupees 2 crores because local officials had doctored data of Monsanto\'s poorly performing Bt cotton varieties.
-        This led to an enquiry and subsequent ban on three varieties of BT Cotton, suspension of Joint Director of Agriculture (JDA) of Warangal district and state acceptance of fair compensation to farmers.
-        2006 – Greenpeace exposed a scandal surrounding the Indian Government permitting France to dump a ship full of hazardous waste in India.
-        2010 – Greenpeace through a petition campaign succeeded in including "complete supplier liability" in the Nuclear Liability Bill.
-        2014 – the organization launched its first solar energy micro-grid, making Dharnai, a village in Bihar, energy independent.
-        2015 Government of India prevented a senior Green peace activist from travelling to London.
-        April 2015 – Government of India froze its bank accounts and suspended its license for failing to abide by FCRA norms
-        6 November 2015 – Registrar of Societies (RoS), of Chennai, in the state of Tamil Nadu, ordered de-registration of Greenpeace India citing financial fraud.
-        21 November 2015 – Madras high court stays cancellation of Greenpeace India\'s registration, observing that the Tamil Nadu Registrar of Societies (RoS) had not followed principles of natural justice.
+    <!-- Auth -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Log in to schedule pickups and track your impact.</string>
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">Join ReVOLT and give your old electronics a second life.</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Log in</string>
+    <string name="action_register">Create account</string>
+    <string name="no_account">New to ReVOLT?</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="action_signup_link">Sign up</string>
+    <string name="action_login_link">Log in</string>
+    <string name="error_name">Please enter your full name</string>
+    <string name="error_email">Please enter a valid email address</string>
+    <string name="error_phone">Please enter a valid 10-digit phone number</string>
+    <string name="error_password">Password must be at least 6 characters</string>
+    <string name="error_required">This field is required</string>
 
-    </string>
-    <string name="About_navdanya">
-        Navdanya is an Indian-based non-governmental organisation which promotes biodiversity conservation, biodiversity, organic farming, the rights of farmers, and the process of seed saving.
-        One of Navdanya\'s founders, and outspoken members, is Vandana Shiva, an environmental activist, physicist, and author.
-        Navdanya began in 1984 as a program of the Research Foundation for Science, Technology and Ecology (RFSTE), a participatory research initiative founded by the environmentalist Vandana Shiva, to provide direction and support to environmental activism.
-        "Navdanya" means "nine crops" that represent India\'s collective source of food security.
-        Vandana Shiva, one of the founders of Navdanya (2014)
-        Navdanya is a member of the Terra Madre slow food movement.
-        Navdanya is a network of seed keepers and organic producers spread across 16 states in India.
-        Navdanya has helped set up 54 community seed banks across the country, trained over 500,000 farmers in "food sovereignty" and sustainable agriculture over the past two decades, and helped set up the largest direct marketing, fair trade organic network in the country.
-        Navdanya has also set up a learning center, Bija Vidyapeeth (School of the Seed) on its biodiversity conservation and organic farm in Doon Valley, Uttarakhand, north India.
-        It has criticised genetic engineering. Navdanya claims to be a women-centred movement for the protection of biological and cultural diversity.
-    </string>
-    <string name="About_aaranyak">
-        Aaranyak is a leading wildlife NGO based in Guwahati.
-        It was founded by Bibhab Kumar Talukdar.
-        It is a Scientific, Industrial Research and frontline environmental organization of India.
-        It works all over the eastern Himalayan region on nature conservation, natural resources management, climate change, disaster management and livelihood enhancement of marginalized communities through research, education and advocacy.
-        The group says its mission is to foster conservation of biodiversity in Northeast India through research, environmental education, capacity building and advocacy for legal and policy reform to usher a new era of ecological security.
-        Recently, UN framework convention on climate change announced Aaranyak in partnership with the International Centre for Integrated Mountain Development (ICIMOD) as winner of its UN Lighthouse Activity Award 2014 for the successful implementation of the community-based flood early warning system in the Lakhimpur and Dhemaji Districts of Assam.
-    </string>
-    <string name="About_kalpavriksh">
-        Kalpavriksh is a non-governmental organization (NGO) based in India that focuses on environmental conservation and sustainable development.
-        It was founded in 1979 and has since been involved in various initiatives related to biodiversity conservation, ecological governance, and environmental education.
-        The organization works with local communities, government agencies, and other stakeholders to promote biodiversity conservation, protect natural habitats, and advocate for policies that support sustainable development.
-        Kalpavriksh also conducts research, provides technical expertise, and organizes workshops and training programs to raise awareness about environmental issues and build capacity for conservation efforts.
-        Overall, Kalpavriksh plays a significant role in promoting environmental sustainability and fostering greater harmony between human societies and the natural world in India.
-    </string>
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_requests">My requests</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, %1$s</string>
+    <string name="home_subtitle">Every device you hand in keeps toxic metals out of landfills.</string>
+    <string name="stat_requests">Requests</string>
+    <string name="stat_active">In progress</string>
+    <string name="stat_kg">kg diverted</string>
+    <string name="home_choose">What would you like to do?</string>
+    <string name="recycle">Recycle</string>
+    <string name="reuse">Reuse</string>
+    <string name="recycle_desc">Broken or obsolete devices, safely dismantled</string>
+    <string name="reuse_desc">Working devices, donated to someone in need</string>
+    <string name="home_partners">Trusted partners</string>
+    <string name="home_fact_title">Did you know?</string>
+    <string name="see_all">See all</string>
+
+    <!-- Requests list -->
+    <string name="requests_title">My requests</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">In progress</string>
+    <string name="filter_done">Finished</string>
+    <string name="requests_empty_title">No requests yet</string>
+    <string name="requests_empty_body">Schedule your first pickup and we\'ll take it from there.</string>
+    <string name="requests_empty_filtered">Nothing in this list right now.</string>
+    <string name="action_new_request">New request</string>
+    <string name="request_item_meta">%1$s · %2$s</string>
+
+    <!-- New request -->
+    <string name="new_request_title">Schedule a pickup</string>
+    <string name="section_device">Device</string>
+    <string name="section_pickup">Pickup</string>
+    <string name="photo_hint">Add a photo of the device</string>
+    <string name="photo_optional">Optional, but it helps our partners prepare</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_gallery">Gallery</string>
+    <string name="action_remove_photo">Remove photo</string>
+    <string name="hint_device_name">Device name (e.g. Redmi Note 8)</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_description">Notes (optional)</string>
+    <string name="label_condition">Condition</string>
+    <string name="condition_working">Working</string>
+    <string name="condition_partial">Partially working</string>
+    <string name="condition_not_working">Not working</string>
+    <string name="hint_organization">Partner organization</string>
+    <string name="hint_address">Pickup address</string>
+    <string name="hint_date">Preferred pickup date (optional)</string>
+    <string name="action_submit_request">Submit request</string>
+    <string name="error_condition">Please choose the device condition</string>
+    <string name="error_quantity">Enter a quantity between 1 and 50</string>
+    <string name="error_orgs_loading">Partner organizations are still loading</string>
+    <string name="no_camera_app">No camera app found on this device</string>
+    <string name="photo_failed">Couldn\'t read that photo</string>
+    <string name="submitting">Submitting…</string>
+
+    <!-- Success -->
+    <string name="success_title">Request submitted!</string>
+    <string name="success_body">Your request #%1$d has been sent to %2$s. You\'ll see status updates under My requests.</string>
+    <string name="action_view_request">View request</string>
+    <string name="action_back_home">Back to home</string>
+
+    <!-- Request detail -->
+    <string name="request_detail_title">Request #%1$d</string>
+    <string name="label_category">Category</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="label_partner">Partner</string>
+    <string name="label_address">Pickup address</string>
+    <string name="label_preferred_date">Preferred date</string>
+    <string name="label_weight">Estimated weight</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_timeline">Progress</string>
+    <string name="weight_kg">%1$s kg</string>
+    <string name="not_specified">Not specified</string>
+    <string name="action_cancel_request">Cancel request</string>
+    <string name="cancel_confirm_title">Cancel this request?</string>
+    <string name="cancel_confirm_body">The partner organization will no longer pick up this device.</string>
+    <string name="cancel_confirm_yes">Yes, cancel</string>
+    <string name="keep">Keep it</string>
+    <string name="request_cancelled">Request cancelled</string>
+    <string name="action_directions">Directions to partner</string>
+
+    <!-- Organization -->
+    <string name="about">About</string>
+    <string name="action_website">Visit website</string>
+    <string name="action_recycle_with">Recycle with them</string>
+    <string name="action_reuse_with">Donate a device</string>
+
+    <!-- Profile -->
+    <string name="profile_impact">Your impact</string>
+    <string name="stat_completed">Completed</string>
+    <string name="stat_devices">Devices</string>
+    <string name="profile_settings">Settings</string>
+    <string name="about_app">About ReVOLT</string>
+    <string name="about_app_body">ReVOLT connects people with trusted organizations to collect, recycle and reuse old electronics, so valuable materials are recovered and hazardous ones are handled safely.</string>
+    <string name="action_logout">Log out</string>
+    <string name="logout_confirm">Log out of ReVOLT?</string>
+    <string name="member_since">Member since %1$s</string>
+    <string name="version">Version %1$s</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="retry">Retry</string>
 </resources>

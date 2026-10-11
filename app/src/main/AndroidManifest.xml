@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.revolt">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Lets the "Camera" button find a camera app on Android 11+ -->
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <!-- Cleartext is allowed because the backend runs on a local machine over plain HTTP. -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,69 +20,40 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReVOLT"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity14"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity13"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity12"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity11"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity10"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity9"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity8"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity7"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity6"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity5"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="true" />
-        <activity
-            android:name=".Splash_Screen"
-            android:exported="true">
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ReVOLT.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.request.NewRequestActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.request.RequestDetailActivity" />
+        <activity android:name=".ui.request.SuccessActivity" />
+        <activity android:name=".ui.org.OrganizationActivity" />
+
         <provider
-            android:authorities="com.example.revolt.fileProvider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-
-
+                android:resource="@xml/file_paths" />
         </provider>
     </application>
 
